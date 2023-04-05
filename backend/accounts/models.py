@@ -67,6 +67,9 @@ class GardenOwnerProfile(models.Model):
     #garden = models.ForeignKey(Garden, on_delete=models.CASCADE)
     location = models.URLField()
 
+    def __str__(self):
+        return self.user.email
+
 
 class GardenOwner(UserBase):
     class Meta:
@@ -97,6 +100,9 @@ class CustomerProfile(models.Model):
     city = models.CharField(max_length=50)
     # liked_plants = models.ManyToManyField(Plant)
     # bookmark_plants = models.ManyToManyField(Plant)
+
+    def __str__(self):
+        return self.user.email
 
 
 class Customer(UserBase):
