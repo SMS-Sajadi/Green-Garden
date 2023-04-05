@@ -11,19 +11,18 @@ class UserManager(BaseUserManager):
 
         user = self.model(email=self.normalize_email(email))
         user.set_password(password)
-
         user.save(using=self._db)
         return user
 
     def create_superuser(self, email, password):
-        user = self.create_user(email=email,password=password)
+        user = self.create_user(email=email, password=password)
         user.is_staff = True
         user.is_superuser = True
         user.save(using=self._db)
         return user
 
 
-class UserBase(AbstractUser):
+class User(AbstractUser):
     email = models.EmailField(max_length=200, unique=True)
     city = models.CharField(max_length=50, null=True, blank=True)
     phone_number = models.IntegerField(null=True, blank=True)
