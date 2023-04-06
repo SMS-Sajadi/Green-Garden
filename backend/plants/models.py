@@ -18,4 +18,8 @@ class Plants(models.Model):
     edible = models.BooleanField()
     wikipedia_link = models.URLField()
     special_condition = models.TextField()
+    main_image = models.ImageField()
+
+    def __str__(self):
+        return self.name
 
