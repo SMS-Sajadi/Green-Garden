@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import View
 from .forms import UserRegistrationForm, VerifyCodeForm
 import random
-from ..utils import send_otp_code
+from utils import send_otp_code
 from .models import OtpCode, User
 from django.contrib import messages
 

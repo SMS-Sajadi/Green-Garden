@@ -1,0 +1,83 @@
+.container {
+    padding: 11px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .darkMode{
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+  }
+
+  .darkMode.container {
+    background-color: #0f172a;
+  }
+  
+  .sky {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #0f172a;
+    position: relative;
+    left: 8px;
+  }
+  .darkMode .sky {
+    background-color: #f1f5f9;
+    background-color: white;
+    position: absolute;
+    left: 10px;
+   
+  }
+  .moon {
+    position: absolute;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    left: -10%;
+    transition: all 0.3s ease-in-out;
+  }
+  .darkMode .moon {
+    left: -70%;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sun {
+    position: absolute;
+    left: 100%;
+    top: -15%;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+  }
+  .darkMode .sun {
+    left: 19%;
+    height: 50px;
+    width: 50px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .clouds {
+    position: absolute;
+    bottom: 3px;
+    right: -5%;
+    width: 43px;
+    height: 43px;
+  }
+  .darkMode .clouds {
+    opacity: 0;
+  }
+  .clouds-light {
+    opacity: 0;
+  }
+  .darkMode .clouds-light {
+    opacity: 1;
+    width: 45px;
+    left: -5px;
+    top: 5px;
+    height: 45px;
+  }
+  
