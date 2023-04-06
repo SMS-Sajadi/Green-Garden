@@ -1,0 +1,298 @@
+@font-face {
+  font-family: vazir;
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/vaziri_persian/Vazir-Thin.eot");
+  src: url("../fonts/vaziri_persian/Vazir-Thin.woff") format("woff"),
+    url("../fonts/vaziri_persian/Vazir-Thin.ttf") format("ttf"),
+    url("../fonts/vaziri_persian/Vazir-Thin.woff2") format("woff2");
+}
+
+body {
+    background: rgb(175, 175, 175, 0.2);
+    font-family: vazir;
+
+  }
+
+.container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  background-color: #eeeeee;
+
+}
+.containerDark{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  justify-content: space-evenly;
+  background-color: #000000d6;
+}
+.signup{
+  padding: 35px;
+  background-color:  rgba(82, 170, 121, 0.83);
+  border-radius: 54px;
+  border: 1px solid #75bf96;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px;
+  box-shadow: 0px 6px 14px rgb(41 95 65 / 83%);
+}
+
+.signupDark{
+  padding: 35px;
+  background-color: rgba(103, 103, 103, 0.6);
+  border-radius: 54px;
+  border: 1px solid #cbcbcb24;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px;
+  box-shadow: 0px 0px 14px rgb(41, 95, 65, 0.83);
+}
+
+
+button{
+  cursor: pointer;
+}
+.form_title{
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 32px;
+  color: #080808;
+}
+
+.form_titleDark{
+  text-align: center;
+  font-size: 2.3rem;
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.input_div{
+  display: flex;
+  flex-direction: column;
+  height: 85px;
+}
+.input_lable {
+  font-size: 1rem;
+  color: #fbe577;
+  text-align: right;
+  margin-bottom: 6px;
+}
+
+.input_lableDark {
+  font-size: 1rem;
+  color: white;
+  text-align: right;
+  margin-bottom: 6px;
+}
+
+.form_input{
+  border-radius: 6px;
+  padding: 2px 7px;
+  width: 300px;
+  height: 24px;
+  border: 1px solid #75bf96;
+  transition: all 0.2s ease-in;
+  box-shadow: 1px 2px 6px 1px #8be2b2;
+  text-align: right;
+  font-family: vazir;
+}
+.input_div span,
+.accept_div span{
+  height: 10px;
+  text-align: right;
+  margin-top: 3px;
+  width: fit-content;
+  font-size: 0.7rem;
+  color: #ff0000;
+  line-height: 10px;
+  padding: 2px 3px;
+  border-radius: 3px;
+  background-color: #f4d7d9d1;
+  margin: 6px 0px;
+}
+.uncomplated{
+  border-radius: 6px;
+  padding: 2px 7px;
+  width: 300px;
+  height: 24px;
+  transition: all 0.2s ease-in;
+  border: 0.5px solid rgb(251, 113, 113);
+  border-top: none ;
+  box-shadow: 1px 2px 6px 1px wheat;
+  text-align: right;
+  font-family: vazir;
+
+}
+.form_input:focus,
+.uncomplated:focus{
+  outline: none;
+  line-height: 20px;
+  height: 30px;
+  border: 3px solid #f9dc4c;
+  box-shadow: 1px 2px 6px 0px wheat;
+}
+.chekbox_div{
+      display: flex;
+      flex-direction: row-reverse;
+      font-size: 0.8rem;
+      align-items: center;
+      height: 20px ;
+      text-align: center;
+
+}
+.accept{
+      color: #00212b;
+}
+.formButtons{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-start;
+}
+.accept_div{
+      display: flex;
+      flex-direction: column;
+      height: 55px;    
+}
+.accept_div label{
+      font-size: 0.9rem;
+      text-align: left;
+      margin-bottom: 6px;
+      margin-right: 12px;
+}
+.submit_btn{
+    margin-bottom: 10px;
+    outline: none;
+    background: #fbe577;
+    border-radius: 10px;
+    border: 2px solid #f3f3f333;
+    width: 100px;
+    height: 31px;
+    box-shadow: -1px 2px 5px 2px #cdbb5f;
+    color: #013626;
+    font-family: vazir;
+
+}
+
+.submit_btnDark{
+  margin-bottom: 10px;
+  outline: none;
+  background: #4EDA9F;
+  border-radius: 10px;
+  border: 2px solid #f3f3f333;
+  width: 100px;
+  height: 31px;
+  box-shadow: 0px 2px 5px 0px #5fcd8c;
+  color: #013626;
+  font-family: vazir;
+
+}
+
+
+.formButtons a{
+      text-decoration: none;
+      color: antiquewhite;
+}
+.err{
+  text-align: right;
+}
+.pic{
+  display: flex;
+}
+.setting{
+  position: absolute;
+  left: 0;
+  width: 60px;
+  top: 25px;
+}
+.home{
+  bottom: 13px;
+  position: absolute;
+  width: 38px;
+  right: 29px;
+}
+
+@media (max-width : 1000px){
+  .pic{
+    display: none;
+  }
+  .container{
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width : 440px){
+    .signup{
+        width: 70%;
+    }
+    .container{
+      margin-left: 0;
+    }
+    .form_input{
+        width: 92%;
+    }
+    .form_title{
+        font-size: 2rem;
+        margin-bottom: 24px;
+    }
+    .input_div{
+        height: 75px;
+    }
+    .input_div label{
+        font-size: 0.8rem;
+    }
+      
+    .form_input:focus,
+    .uncomplated:focus{
+        height: 20px;
+        width: 92%;
+    }
+
+    .uncomplated{
+        padding: 2px 7px;
+        width: 92%;
+        height: 20px;
+      }
+    .input_div span,
+    .accept_div span{
+        font-size: 0.6rem;
+    }
+    .accept_div label{
+        font-size: 0.8rem;
+    }
+    .accept_div{
+        height: 35px;    
+  }
+
+  .submit_btn{
+    font-size: 0.8rem;
+}
+.formButtons a{
+    font-size: 0.9rem;
+}
+.chekbox_div{
+    height: 26px;
+}
+
+.formButtons{
+    margin-top: 14px;
+}
+.home{
+  top: 49rem;
+  width: 38px;
+  left: 20px;
+}
+
+}
+
+
+
