@@ -8,6 +8,8 @@ import VerificationInput from "react-verification-input";
 import axios from 'axios';
 //CSS
 import '../templates/verifyCode.css'
+//svg
+import flower from '../templates/images/img/poppy flower-amico (1).svg';
 
 
 const ConfirmCode = () => {
@@ -30,7 +32,7 @@ const ConfirmCode = () => {
             navigate("/login");
         }
         else{
-            console.log('again')
+            notify('رمز واردشده مطابقت ندارد', 'error');
         }
 
     }
@@ -40,21 +42,23 @@ const ConfirmCode = () => {
     return (
         <div className={'cont'}>
             <div className={'box'}>
-                <h1 className={"title"}>تایید کد</h1>
+                <h1 className={"title"}>تایید کد </h1>
+                <span>کد ارسال شده به ایمیل خود را در باکس زیر وارد کنید </span>
+
                 <VerificationInput
-                    // classNames={{
-                    //     container: "container",
-                    //     character: "character",
-                    //     characterInactive: "character--inactive",
-                    //     characterSelected: "character--selected",
-                    //   }}
+                    classNames={{
+                        characterInactive: "inprt_active",
+                        characterSelected: "input_select",
+                      }}
                       length = {4}
                       validChars = {'0-9'}
                       placeholder = {'_'}
                       autoFocus = {true}
                       onComplete = {handleCode}
                 />
+
             </div>
+            <img alt='' src={flower}/>
 
 
         </div>
